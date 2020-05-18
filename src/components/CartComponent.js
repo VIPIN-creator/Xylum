@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link} from "react-router-dom";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader, Row, Label, Col, Breadcrumb, BreadcrumbItem } from "reactstrap";
 import {Form, Control, Errors} from "react-redux-form";
-
+import {baseUrl} from "../shared/baseUrl";
 
 
 const required = (val) => val && val.length;
@@ -45,7 +45,7 @@ let addedItems =  props.items.length ?
             
                         <div className="col-sm-3"> 
                         <Link to ={`/${item.category}/${item.id}`} style={{ textDecoration: 'none', color: 'black' }} >
-                            <img src={item.image} alt={item.img} className="img-fluid"/>
+                            <img src={baseUrl + item.image} alt={item.img} className="img-fluid"/>
                             </Link>
                         </div>
                     
