@@ -11,8 +11,8 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "4.0.0",
     "bootstrap-social": "^5.1.1",
-    "concurrently": "^5.2.0",
     "cross-fetch": "^3.0.4",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
@@ -31,22 +31,16 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js", 
-    "build": "react-scripts build",
+    "start": "node server.js",
+        "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "client-install": "npm install --prefix client",  
-    "deploy": "gh-pages -d build",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client        && npm run build --prefix client"  ,
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:3000",
   "browserslist": {
     "production": [
       ">0.2%",
