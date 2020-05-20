@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Breadcrumb, BreadcrumbItem} from "reactstrap";
-import { baseUrl } from "../shared/baseUrl";
 import {Link} from "react-router-dom";
 import Grid from '@bit/joshk.react-spinners-css.grid';
 
@@ -38,7 +37,7 @@ import Grid from '@bit/joshk.react-spinners-css.grid';
           
           <div className="row">
             <div className="col-sm-4">
-              <img src={baseUrl + props.fruit.image} className="img-fluid"  alt="ime"/>
+              <img src={props.fruit.image} className="img-fluid"  alt="ime"/>
             </div>
             <div className="col-sm-8">
               <h2>{props.fruit.name}</h2>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Card, CardBody, CardImg, CardTitle,  Button, CardDeck} from "reactstrap";
 import {Link} from "react-router-dom";
-import {baseUrl} from "../shared/baseUrl";
 import { useSpring, animated, config } from "react-spring";
 import Grid from '@bit/joshk.react-spinners-css.grid';
 
@@ -52,7 +51,7 @@ console.log(props.isLoading);
      <CardBody>
  
      <Link to ={`/${props.plant.category}/${props.plant.id}`} style={{ textDecoration: 'none', color: 'black' }} >    
-     <CardImg src={ baseUrl + props.plant.image} alt="Card image cap" className="card-image" />
+     <CardImg src={props.plant.image} alt="Card image cap" className="card-image" />
    <CardTitle>{props.plant.name.charAt(0) + props.plant.name.slice(1).toLowerCase()}</CardTitle>
    </Link>
  
@@ -71,17 +70,17 @@ function Services(){
   <hr />
   <div className="row text-center justify-content-around"  >
   <div className="col-sm-3  mr-2">
-  <img src={baseUrl + "assets/images/vehicle.png"} style={{}} className="img-fluid" alt="im" />
+  <img src={"assets/images/vehicle.png"} style={{}} className="img-fluid" alt="im" />
   <h4>Free Shiping</h4>
   <p>We have a worldwide delivery for most of the mentioned items and our same day delivery is a unique idea to keep the folks happy.   </p>
   </div>
   <div className="col-sm-3  mr-2">
-  <img src={baseUrl + "assets/images/simple.png"} style={{}} className="img-fluid" alt="imge" />
+  <img src={"assets/images/simple.png"} style={{}} className="img-fluid" alt="imge" />
   <h4>Plants, Simplified</h4>
   <p>Order plants ready to be placed in your home, office or garden. Just Unpack, Relax and Enjoy your green buddies.</p>
   </div>
   <div className="col-sm-3 mr-2">
-  <img src={baseUrl + "assets/images/medal.png"} style={{}} className="img-fluid"  alt="ima"/>
+  <img src={"assets/images/medal.png"} style={{}} className="img-fluid"  alt="ima"/>
   <h4>Money, Back</h4>
   <p>Orders delivered & accepted by the customer can be refunded. In case you feel the order is not as per specification, please contact our customer care team immediately in 24hrs.</p>
   </div>

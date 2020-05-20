@@ -1,7 +1,6 @@
 import React, { useState } from "react";
  import { Jumbotron, Navbar, NavbarToggler, Collapse, Nav, NavItem } from "reactstrap";
 import {NavLink} from "react-router-dom";
-import {baseUrl} from "../shared/baseUrl";
 
 function Header() {
 
@@ -21,7 +20,7 @@ function toggleNav(){
            
                 <div className="row text-center justify-content-center">
                     <div className="col-6 col-sm-2 ">
-                        <img src={baseUrl + "assets/images/logo2.png"} className="img-fluid" alt="im" />
+                        <img src={"assets/images/logo2.png"} className="img-fluid" alt="im" />
                     </div>
                     <div className=" col-6 col-sm-2 align-self-center">
                         <h1>XYLUM</h1>

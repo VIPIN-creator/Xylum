@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Card, CardBody, CardImg, CardTitle,  Button, CardDeck, Breadcrumb, BreadcrumbItem} from "reactstrap";
 import {Link} from "react-router-dom";
-import {baseUrl} from "../shared/baseUrl";
 import { useSpring, animated, config } from "react-spring";
 import Grid from '@bit/joshk.react-spinners-css.grid';
 
@@ -45,7 +44,7 @@ function RenderIndoorPlant({plant, addToCart}){
     <Card >
     <CardBody>
     <Link to ={`/indoorplants/${plant.id}`} style={{ textDecoration: 'none', color: 'black' }} >    
-    <CardImg src={ baseUrl + plant.image} alt="Card image cap" className="img-fluid card-image mb-3"/>
+    <CardImg src={plant.image} alt="Card image cap" className="img-fluid card-image mb-3"/>
   <CardTitle>{plant.name.charAt(0) + plant.name.slice(1).toLowerCase()}</CardTitle>
   </Link>
   <Button onClick={() => {handleClick(plant.id)}} className="btn" >
@@ -99,13 +98,7 @@ return(
             </div>       
           </div>        
           <div className="row">
-          {/* <Transition
-  items={props.indoor} keys={item => item.id}
-  from={{ transform: 'translate3d(0,0,-40%)' }}
-  enter={{ transform: 'translate3d(0,0,0px)' }}
-  leave={{ transform: 'translate3d(0,0,40px)' }}>
-   {item => props => <RenderIndoorPlant style={props} plant = {item} onClick ={ props.onClick} key={item.id}  addToCart={props.addToCart}/> }
-</Transition> */ show}
+          { show}
 
         </div>
    </div>

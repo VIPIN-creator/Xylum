@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {Card, CardBody, CardImg, CardTitle,  Button, CardDeck, Breadcrumb, BreadcrumbItem} from "reactstrap";
 import {Link} from "react-router-dom";
-import {baseUrl} from "../shared/baseUrl";
 import { useSpring, animated, config } from "react-spring";
 import Grid from '@bit/joshk.react-spinners-css.grid';
 
@@ -42,7 +41,7 @@ function RenderFruitPlant({plant, addToCart}){
     <CardBody>
 
     <Link to ={`/fruitplants/${plant.id}`} style={{ textDecoration: 'none', color: 'black' }} >    
-    <CardImg src={ baseUrl + plant.image} alt="Card image cap" className="card-image" />
+    <CardImg src={plant.image} alt="Card image cap" className="card-image" />
   <CardTitle>{plant.name.charAt(0) + plant.name.slice(1).toLowerCase()}</CardTitle>
   </Link>
 

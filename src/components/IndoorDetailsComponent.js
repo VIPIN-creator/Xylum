@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Breadcrumb, BreadcrumbItem} from "reactstrap";
-import { baseUrl } from "../shared/baseUrl";
 import {Link} from "react-router-dom";
 import Grid from '@bit/joshk.react-spinners-css.grid';
 
@@ -40,7 +39,7 @@ const handleClick = (id) => {
          
         
             <div className="col-sm-4">
-              <img src={baseUrl + props.indoor.image} className="img-fluid" alt="im" />
+              <img src={props.indoor.image} className="img-fluid" alt="im" />
             </div>
             <div className="col-sm-8">
               <h2>{props.indoor.name}</h2>

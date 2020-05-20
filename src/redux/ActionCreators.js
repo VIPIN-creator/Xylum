@@ -1,10 +1,9 @@
 import * as ActionTypes from "./ActionTypes";
-import {baseUrl} from "../shared/baseUrl";
 
 export const fetchIndoor = () => (dispatch) => {
     dispatch(indoorLoading(true));
 
-    return fetch(baseUrl + 'indoor')
+    return fetch('/indoor')
     .then(response => {
         if(response.ok){
             return response;
@@ -69,7 +68,7 @@ export const subtractQuantity = (id) => {
 export const fetchOutdoor = () => (dispatch) => {
     dispatch(outdoorLoading(true));
 
-    return fetch(baseUrl + 'outdoor')
+    return fetch('/outdoor')
     .then(response => {
         if(response.ok){
             return response;
@@ -106,7 +105,7 @@ export const outdoorFailed = (errmess) => ({
 export const fetchCombo = () => (dispatch) => {
     dispatch(comboLoading(true));
 
-    return fetch(baseUrl + 'combo')
+    return fetch('/combo')
     .then(response => {
         if(response.ok){
             return response;
@@ -143,7 +142,7 @@ export const comboFailed = (errmess) => ({
 export const fetchFruit = () => (dispatch) => {
     dispatch(fruitLoading(true));
 
-    return fetch(baseUrl + 'fruit')
+    return fetch('/fruit')
     .then(response => {
         if(response.ok){
             return response;
