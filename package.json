@@ -2,7 +2,6 @@
   "name": "xylum",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vipin-creator.github.io/Xylum/",
   "dependencies": {
     "@bit/joshk.react-spinners-css.facebook": "^1.1.8",
     "@bit/joshk.react-spinners-css.grid": "^1.1.8",
@@ -31,12 +30,10 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
         "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
