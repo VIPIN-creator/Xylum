@@ -7,10 +7,10 @@ const compression = require('compression')
 const helmet = require('helmet')
 const cors = require('cors')
 // Import routes
-const indoorRouter = require('./routes/indoor-route')
-const outdoorRouter = require('./routes/outdoor-route')
-const comboRouter = require('./routes/combo-route')
-const fruitRouter = require('./routes/fruit-route')
+const indoorRouter = require('../server/routes/indoor-route')
+const outdoorRouter = require('../server/routes/outdoor-route')
+const comboRouter = require('../server/routes/combo-route')
+const fruitRouter = require('../server/routes/fruit-route')
 
 // Setup default port
 const PORT = process.env.PORT || 4000
