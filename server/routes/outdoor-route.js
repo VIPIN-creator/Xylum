@@ -1,7 +1,7 @@
 // Import express
 const express = require('express')
 // Import users controller
-const outdoorController = require('./../controllers/outdoor-controller.js')
+const outdoorController = require('../controllers/outdoor-controller.js')
 // Create express router
 const router = express.Router()
 // Create rout between usersController and '/all' endpoint

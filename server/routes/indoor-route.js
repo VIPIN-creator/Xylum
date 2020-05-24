@@ -1,7 +1,7 @@
 // Import express
 const express = require('express')
 // Import users controller
-const indoorController = require('./../controllers/indoor-controller.js')
+const indoorController = require('../controllers/indoor-controller.js')
 // Create express router
 const router = express.Router()
 // Create rout between usersController and '/all' endpoint

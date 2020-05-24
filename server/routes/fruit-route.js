@@ -1,7 +1,7 @@
 // Import express
 const express = require('express')
 // Import users controller
-const fruitController = require('./../controllers/fruit-controller.js')
+const fruitController = require('../controllers/fruit-controller.js')
 // Create express router
 const router = express.Router()
 // Create rout between usersController and '/all' endpoint

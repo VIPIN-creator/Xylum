@@ -1,7 +1,7 @@
 // Import express
 const express = require('express')
 // Import users controller
-const comboController = require('./../controllers/combo-controller.js')
+const comboController = require('../controllers/combo-controller.js')
 // Create express router
 const router = express.Router()
 // Create rout between usersController and '/all' endpoint
