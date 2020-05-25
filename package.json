@@ -47,8 +47,10 @@
     "build-front": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start": "concurrently \"npm run start-server\" \"npm run start-front\" --kill-others"
+    "start": "concurrently \"npm run start-server\" \"npm run start-front\" --kill-others",
+    "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix client        && npm run build --prefix client"  
   },
+  
   "eslintConfig": {
     "extends": "react-app"
   },
